@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OO_programming.CsvImporter">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CsvImporter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OO_programming.PaySlip" Collapsed="true">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAgCCAIAAAAAAAEAAAAAAAAAAAAAQAAAAg=</HashCode>
+      <FileName>PaySlip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OO_programming.PayCalculatorNoThreshold">
+    <Position X="1.25" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PayCalculatorNoThreshold.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OO_programming.PayCalculatorWithThreshold">
+    <Position X="4.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PayCalculatorWithThreshold.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OO_programming.PaySlipWriter">
+    <Position X="8.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>PaySlipWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OO_programming.Form1">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAKCAAgAAAACkIAACQBgAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OO_programming.Program">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OO_programming.TaxCalculator">
+    <Position X="6.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>TaxCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

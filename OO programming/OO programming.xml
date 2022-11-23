@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OO programming</name>
+    </assembly>
+    <members>
+        <member name="T:OO_programming.CsvImporter">
+            <summary>
+            A.NET library for reading and writing CSV files.
+            Installed using Package Manager Console
+            -- PM> Install-Package CsvHelper
+            Or through .NET CLI Console
+            > dotnet add package CsvHelper
+            </summary>
+        </member>
+        <member name="M:OO_programming.CsvImporter.ImportPayRecords(System.String)">
+            <summary>
+            Imports the data from a csv file and reads every line in the .csv file and adds to Pay Slip objects        
+            </summary>
+        </member>
+        <member name="M:OO_programming.Form1.NewDataTable(System.String,System.String,System.Boolean)">
+            <summary>
+            database table representation and provides a collection of columns and rows to store data in a grid form
+            </summary>
+            <param name="fileName">string: Contains the path of the file</param>
+            <param name="delimiters">string: delimiters to be used in every column</param>
+            <param name="firstRowContainsFieldNames">bool: set to display field names</param>
+            <returns>DataTable: holds all the data from .csv file</returns>
+        </member>
+        <member name="F:OO_programming.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OO_programming.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:OO_programming.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:OO_programming.TaxCalculator.CalculateNoThreshold(System.Double)">
+            <summary>
+            Static method for Tax-free threshold NOT claimed by employee        
+            </summary>
+            <param name="gross"></param>
+            <returns>double: The amount of Tax to withhold.</returns>
+        </member>
+        <member name="M:OO_programming.TaxCalculator.CalculateWithThreshold(System.Double)">
+            <summary>
+            Static method for Tax-free threshold CLAIMED by employee          
+            </summary>
+            <param name="gross">double: The gross amount for the employee pay record</param>        
+            <returns>double: The amount of Tax to withhold</returns>
+        </member>
+        <member name="T:OO_programming.PayCalculatorNoThreshold">
+            <summary>
+            Extends PayCalculator class handling No tax threshold
+            </summary>
+        </member>
+        <member name="P:OO_programming.PayCalculatorNoThreshold.Tax">
+            <summary>
+            Property that overrides the Tax property in the base class.
+            Calls the static method CalculateWithNoThreshold of TaxCalculator
+            to determine the tax.
+            </summary>
+            <return>double: Returns rounded value of Tax with 2 decimal places</return>
+        </member>
+        <member name="T:OO_programming.PayCalculatorWithThreshold">
+            <summary>
+            Extends PayCalculator class handling With tax threshold
+            </summary>
+        </member>
+        <member name="P:OO_programming.PayCalculatorWithThreshold.Tax">
+            <summary>
+            Property that overrides the Tax property in the base class.
+            Calls the static method CalculateWithThreshold of TaxCalculator
+            to determine the tax.
+            </summary>
+            <return>double: Returns rounded value of Tax with 2 decimal places</return>
+        </member>
+        <member name="T:OO_programming.PaySlip">
+            <summary>
+            Class a capture details accociated with an employee's pay slip record
+            </summary>
+        </member>
+        <member name="M:OO_programming.PaySlip.#ctor(System.Int32,System.String,System.String,System.Double[],System.Double[],System.Double)">
+            <summary>
+            Pay slip constructor
+            </summary>
+            <param name="id">int: The employee identifier</param>
+            <param name="hours">double[]: Array of the employee's shift hours worked.</param>
+            <param name="rates">double[]: Array of the employee's pay rates for the shifts worked.</param>
+            <param name="firstName">string: First name of the employee</param>
+            <param name="lastName">string: Last name of the employee</param>
+            <param name="hourlyRate">double: Hourly rate of employee</param>
+        </member>
+        <member name="P:OO_programming.PaySlip.TotalHours">
+            <summary>
+            Read only derived property that return the total worked hours
+            </summary>
+            <param name="totalHours">double: Holds the value of the total hours worked by the employee.</param>
+            <returns>double: Floored value of the total worked hours.</returns>
+        </member>
+        <member name="P:OO_programming.PaySlip.Net">
+            <summary>
+            Read only derived property that returns the net payment which is 'Gross - Tax'
+            </summary>
+        </member>
+        <member name="P:OO_programming.PaySlip.Tax">
+            <summary>
+            Abstract property that must be overriden by any class that inherits from Pay Slip (derived class).
+            </summary>
+        </member>
+        <member name="P:OO_programming.PaySlip.Gross">
+            <summary>
+            Read only property that derives the Employee Gross pay by summing all the rates of every employee        
+            </summary>
+            <returns>double: Floored value of the Employee Gross.</returns>
+        </member>
+        <member name="M:OO_programming.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:OO_programming.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:OO_programming.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:OO_programming.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
