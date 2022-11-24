@@ -1,7 +1,7 @@
 ﻿
 namespace OO_programming
 {
-    partial class Form1
+    partial class PayCalcForm
     {
         /// <summary>
         /// Required designer variable.

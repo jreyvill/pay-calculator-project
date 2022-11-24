@@ -13,13 +13,13 @@ using Microsoft.VisualBasic.FileIO;
 
 namespace OO_programming
 {
-    public partial class Form1 : Form
+    public partial class PayCalcForm : Form
     {
         /// <summary>
         /// Initialize Form component.
         /// Holds datagrid and buttons
         /// </summary>
-        public Form1()
+        public PayCalcForm()
         {
             InitializeComponent();           
         }

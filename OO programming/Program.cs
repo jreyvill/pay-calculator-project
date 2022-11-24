@@ -21,7 +21,7 @@ namespace OO_programming
             ///</summary>
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new PayCalcForm());
 
         }
     }

@@ -21,7 +21,12 @@ namespace OO_programming
         /// <param name="firstName">string: First name of the employee</param>
         /// <param name="lastName">string: Last name of the employee</param>
         /// <param name="hourlyRate">double: Hourly rate of employee</param>
-        public PaySlip(int id, string firstName, string lastName, double[] hours, double[] rates, double hourlyRate)
+        public PaySlip(int id, 
+                       string firstName, 
+                       string lastName, 
+                       double[] hours, 
+                       double[] rates, 
+                       double hourlyRate)
         {
             this.Id = id;
             this._hours = hours;
@@ -40,7 +45,6 @@ namespace OO_programming
         /// <summary>
         /// Read only derived property that return the total worked hours
         /// </summary>
-        /// <param name="totalHours">double: Holds the value of the total hours worked by the employee.</param>
         /// <returns>double: Floored value of the total worked hours.</returns>
         public double TotalHours
         {
