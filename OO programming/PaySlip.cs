@@ -83,5 +83,13 @@ namespace OO_programming
 
         }
 
+        public double Super 
+        {
+            get 
+            {
+                return Math.Round(this.Gross * .105);
+            }
+        }
+
     }
 }
